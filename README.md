@@ -53,6 +53,16 @@ Histogram of residuals approximated a normal distribution.
 ![histogramRF](https://github.com/user-attachments/assets/cbb09831-9f04-44f7-b34c-1a1a4da192a1)
 
 
+Actual vs predicted unemployment rate plot
+![actualvspredunemp](https://github.com/user-attachments/assets/27e119b0-f0eb-438b-b598-431b60f238b1)
+
+
+This plot compares the Random Forest model’s predicted unemployment rates against the actual observed values in the out-of-sample test set. The test set was constructed using a chronological split, ensuring that future observations were not used in training.
+
+The close alignment between the predicted and actual lines suggests the model successfully captures underlying macroeconomic patterns influencing unemployment. While minor deviations occur, the predictions generally track the true unemployment trajectory with reasonable accuracy, indicating good generalization to unseen time periods.
+
+This plot provides an intuitive, visual summary of the model’s forecasting quality and complements the statistical metrics and residual diagnostics used elsewhere in the analysis.
+
 Ljung-Box test for autocorrelation (lag=10) on the residuals gave a p-value > 0.99, strongly supporting the hypothesis that the residuals are uncorrelated which is a key assumption for a good predictive model.
 
 Key Insights and Statistical Value
